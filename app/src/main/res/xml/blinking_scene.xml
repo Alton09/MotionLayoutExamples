@@ -11,8 +11,13 @@
 
         <KeyFrameSet>
             <KeyAttribute
-                android:rotation="360"
+                android:rotation="720"
                 motion:framePosition="100"
+                motion:motionTarget="@id/button" />
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="25"
                 motion:motionTarget="@id/button" />
             <KeyPosition
                 motion:keyPositionType="deltaRelative"
@@ -27,8 +32,8 @@
             android:id="@id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"
             motion:layout_constraintTop_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent">
 
@@ -40,8 +45,8 @@
             android:id="@id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent">
         </Constraint>
